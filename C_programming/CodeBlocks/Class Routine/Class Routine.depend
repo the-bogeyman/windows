@@ -1,0 +1,29 @@
+# depslib dependency file v1.0
+1422171757 source:d:\projects\github\master\windows\c_programming\codeblocks\class routine\class routine\main.c
+	<stdio.h>
+	<stdlib.h>
+	"routine.h"
+
+1422171588 d:\projects\github\master\windows\c_programming\codeblocks\class routine\class routine\routine.h
+
+1422170990 source:d:\projects\github\master\windows\c_programming\codeblocks\class routine\class routine\routine.c
+	<stdio.h>
+	<string.h>
+	<time.h>
+	<stdlib.h>
+	"routine.h"
+
+1422172952 source:d:\projects\github\master\windows\c_programming\codeblocks\class routine\main.c
+	<stdio.h>
+	<stdlib.h>
+	"routine.h"
+
+1422171588 d:\projects\github\master\windows\c_programming\codeblocks\class routine\routine.h
+
+1422173090 source:d:\projects\github\master\windows\c_programming\codeblocks\class routine\routine.c
+	<stdio.h>
+	<string.h>
+	<time.h>
+	<stdlib.h>
+	"routine.h"
+
