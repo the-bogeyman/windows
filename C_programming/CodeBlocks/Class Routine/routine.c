@@ -21,7 +21,7 @@ But please give me credit for my part of work in your project.
 #define DATE_LENTH 25
 #define SOURCE_SITE "github.com/the-bogeyman"
 #define EMAIL "ibrahim15-4739@diu.edu.bd"
-#define VERSION 1
+#define VERSION 2
 
 int get_day(void)
 {
@@ -64,7 +64,7 @@ int get_day(void)
     return 0;
 }
 
-void show_routine(int day_num)
+void show_routine(int day_num, char show_tom)
 {
     printf("Day\t\tSubject\t\tTime\t\t\tRoom no.\n=======================================================================\n\n");
     switch(day_num)
@@ -112,6 +112,11 @@ void show_routine(int day_num)
             print_error();
         }
     }
+    if(show_tom == 'y')
+    {
+        printf("\n\n\tTomorrow's Routine :\n\n");
+        show_routine(day_num+1,'n');
+    }
 }
 
 void print_error(void)
@@ -126,5 +131,5 @@ void print_start_msg(void)
 {
     system("color 0a");
     printf("Class routine of DIU-40th batch-Section E.\n");
-    printf("Version %d\n\nToday's Routine :\n\n",VERSION);
+    printf("Version %d\n\n\tToday's Routine :\n\n",VERSION);
 }

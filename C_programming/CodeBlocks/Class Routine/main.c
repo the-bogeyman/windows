@@ -13,7 +13,7 @@ int main()
     }
     else
     {
-        show_routine(day);
+        show_routine(day,'y');
     }
     printf("\n\n");
     system("pause");
