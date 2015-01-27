@@ -71,12 +71,12 @@ void show_routine(int day_num, char show_tom)
     {
     case 1:
         {
-            printf("Saturday\t\tPHY-113\t\t1:00pm-2:30pm\t\t101PP/104 PP\n");
+            printf("Saturday\tPHY-113\t\t1:00pm-2:30pm\t\t101PP/104 PP\n");
             break;
         }
     case 2:
         {
-            printf("Sunday\t\tMAT-111\t\t1:00pm-2:30pm\t\t501 AB\n");
+            printf("Sunday\tMAT-111\t\t1:00pm-2:30pm\t\t501 AB\n");
             break;
         }
     case 3:
@@ -91,15 +91,15 @@ void show_routine(int day_num, char show_tom)
         }
     case 5:
         {
-            printf("Wednesday\t\tCSE-112\t\t8:30am-10:00am\t\t504 AB\n");
-            printf("Wednesday\t\tMAT-111\t\t10:00am-11:30am\t\t306 AB\n");
+            printf("Wednesday\tCSE-112\t\t8:30am-10:00am\t\t504 AB\n");
+            printf("Wednesday\tMAT-111\t\t10:00am-11:30am\t\t306 AB\n");
             break;
         }
     case 6:
         {
-            printf("Thursday\t\tCSE-112\t\t11:30am-1:00pm\t\tL-202 M\n");
-            printf("Thursday\t\tENG-113\t\t2:30pm-4:00pm\t\t107 PP\n");
-            printf("Thursday\t\tPHY-113\t\t4:00pm-5:30pm\t\t110 PP\n");
+            printf("Thursday\tCSE-112\t\t11:30am-1:00pm\t\tL-202 M\n");
+            printf("Thursday\tENG-113\t\t2:30pm-4:00pm\t\t107 PP\n");
+            printf("Thursday\tPHY-113\t\t4:00pm-5:30pm\t\t110 PP\n");
             break;
         }
     case 7:
