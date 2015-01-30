@@ -112,6 +112,10 @@ void show_routine(int day_num, char show_tom)
             print_error();
         }
     }
+    if(day_num == 7)
+    {
+        day_num=0;
+    }
     if(show_tom == 'y')
     {
         printf("\n\n\tTomorrow's Routine :\n\n");
