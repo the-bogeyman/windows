@@ -21,7 +21,7 @@ But please give me credit for my part of work in your project.
 #define DATE_LENTH 25
 #define SOURCE_SITE "github.com/the-bogeyman"
 #define EMAIL "ibrahim15-4739@diu.edu.bd"
-#define VERSION 2
+#define VERSION 3
 
 int get_day(void)
 {
@@ -64,9 +64,8 @@ int get_day(void)
     return 0;
 }
 
-void show_routine(int day_num, char show_tom)
+void show_routine(int day_num)
 {
-    printf("Day\t\tSubject\t\tTime\t\t\tRoom no.\n=======================================================================\n\n");
     switch(day_num)
     {
     case 1:
@@ -76,35 +75,35 @@ void show_routine(int day_num, char show_tom)
         }
     case 2:
         {
-            printf("Sunday\tMAT-111\t\t1:00pm-2:30pm\t\t501 AB\n");
+            printf("Sunday\t\tMAT-111\t\t1:00pm-2:30pm\t\t501 AB\n");
             break;
         }
     case 3:
         {
-            printf("=>>  No Class  <==\n");
+            printf("Monday\t\t\t=>>  No Class  <==\n");
             break;
         }
     case 4:
         {
-            printf("=>>  No Class  <==\n");
+            printf("Tuesday\t\t\t=>>  No Class  <==\n");
             break;
         }
     case 5:
         {
             printf("Wednesday\tCSE-112\t\t8:30am-10:00am\t\t504 AB\n");
-            printf("Wednesday\tMAT-111\t\t10:00am-11:30am\t\t306 AB\n");
+            printf("\t\tMAT-111\t\t10:00am-11:30am\t\t306 AB\n");
             break;
         }
     case 6:
         {
             printf("Thursday\tCSE-112\t\t11:30am-1:00pm\t\tL-202 M\n");
-            printf("Thursday\tENG-113\t\t2:30pm-4:00pm\t\t107 PP\n");
-            printf("Thursday\tPHY-113\t\t4:00pm-5:30pm\t\t110 PP\n");
+            printf("\t\tENG-113\t\t2:30pm-4:00pm\t\t107 PP\n");
+            printf("\t\tPHY-113\t\t4:00pm-5:30pm\t\t110 PP\n");
             break;
         }
     case 7:
         {
-            printf("=>>  No Class  <==\n");
+            printf("Friday\t\t\t=>>  No Class  <==\n");
             break;
         }
     default:
@@ -112,15 +111,11 @@ void show_routine(int day_num, char show_tom)
             print_error();
         }
     }
-    if(day_num == 7)
-    {
-        day_num=0;
-    }
-    if(show_tom == 'y')
-    {
-        printf("\n\n\tTomorrow's Routine :\n\n");
-        show_routine(day_num+1,'n');
-    }
+}
+
+void routine_header(void)
+{
+    printf("Day\t\tSubject\t\tTime\t\t\tRoom no.\n=======================================================================\n\n");
 }
 
 void print_error(void)
@@ -136,4 +131,14 @@ void print_start_msg(void)
     system("color 0a");
     printf("Class routine of DIU-40th batch-Section E.\n");
     printf("Version %d\n\n\tToday's Routine :\n\n",VERSION);
+}
+
+void show_full_routine(void)
+{
+    int i;
+
+    for(i = 1; i <=7; i++)
+    {
+        show_routine(i);
+    }
 }
